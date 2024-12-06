@@ -120,6 +120,7 @@ header {
 .header-section{
     justify-content: center;
     gap: 50px;
+    margin-top: 4px
 }
 .hero-section {
     max-width: 40vw;
@@ -131,5 +132,16 @@ header {
     margin-top: 20px;
 }
 .hero-image img {
-    width: 600px;
+    width: 500px;
+}
+.companies-header {
+    margin-top: 4px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.companies-logo {
+    justify-content: space-between;
+    margin-top: 6px;
+    flex-wrap: wrap;
 }
