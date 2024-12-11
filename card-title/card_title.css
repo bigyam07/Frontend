@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Poppins", serif;
+}
+p {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+h4{
+    color: red;
+}
+
+.card-section{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(images/5073414.jpg);
+    background-size: cover;;
+}
+.card-title {
+    width: 200px;
+    height: 270px;
+    border: 1px solid black;
+    margin-top: 25vh;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+}
+.card-banner {
+    height: 25%;
+    background-image: url(images/ZZZZZ2337.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+    background-size: cover;
+}
+h2 {
+    color: white;
+}
+.card-head {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px red;
+    padding: 5px;
+    text-align: center;
+}
+.inside-card {
+    margin-top: 20px;
+    padding: 10px
+}
+.inside-card p {
+    font-size: 0.7rem;
+}
+.inside-card a:hover {
+    color: rgb(196, 73, 73);
+}
+
+.card-banner2 {
+    height: 25%;
+    background-image: url(images/black-horizontal-abstract-wide-banner-with-green-light-line_156943-519.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+}
+.card-head2 {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(92, 243, 47);
+    padding: 5px;
+    text-align: center;
+}
+.card-head2 h4 {
+    color: rgb(92, 243, 47)
+}
+.card-2-a {
+    color: rgb(92, 243, 47);
+}
+.card-2-a:hover {
+    color: rgb(71, 185, 37);
+}
+.card-3-banner {
+    background-image: url(images/blue.jpg);
+    background-size:cover;
+}
+.card-3-head {
+    box-shadow: 1px 1px 10px rgb(92, 168, 255);
+}
+.card-3-head h4 {
+    color:  rgb(92, 168, 255)  !important;
+}
+.card-3-a {
+    color:  rgb(92, 168, 255) !important;
+}
+.card-3-a:hover {
+    color:  rgb(75, 130, 192) !important;
+}
+.card-1 {
+    box-shadow: 3px 4px 10px red;
+}
+.card-1:hover {
+    box-shadow: 5px 6px 15px red;
+}
+.card-2 {
+    box-shadow: 3px 4px 10px rgb(92, 243, 47);
+}
+.card-2:hover {
+    box-shadow: 5px 6px 15px rgb(92, 243, 47);
+}
+.card-3 {
+    box-shadow: 3px 4px 10px rgb(92, 168, 255);
+}
+.card-3:hover {
+    box-shadow: 5px 6px 15px rgb(92, 168, 255);
+}
