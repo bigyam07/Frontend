@@ -1,0 +1,62 @@
+@media screen and (max-width: 991px){
+    h3 {
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    .main-nav {
+        overflow: initial;
+    }
+    .nav-links {
+       position: absolute;
+       background-color: white;
+       left: -100%; 
+       top: 100%;
+       width: 100%;
+       padding-block: 20px;
+    }
+    .nav-links.active {
+        left: 0px;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .images {
+        width: 45%;
+        height: 180px;
+    }
+    .cta-section {
+        padding-block: 80px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header-section {
+        flex-direction: column-reverse;
+    }
+    .hero-section {
+        width: 100%;
+    }
+    .get-started-button {
+        width: 100%;
+        text-align: center;
+    }
+    .features {
+        gap: 60px;
+    }
+    .inside-features {
+        width: 25%;
+    }
+    .big-features-section {
+        flex-direction: column;
+        margin: 20px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-content {
+        text-align: center;;
+    }
+    
+}

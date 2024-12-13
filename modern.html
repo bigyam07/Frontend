@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUB</title>
     <link rel="stylesheet" href="modern.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link rel="icon" type="image" href="assets/icons8-star-filled-100.png"> 
 </head>
 <body>
@@ -22,7 +23,7 @@
             <a href="#" class="company-logo">
                 <img src="assets/asset 0.png" alt="company-logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Products</a></li>
                     <li><a href="#" class="hover-links">Customers</a></li>
@@ -32,6 +33,9 @@
                     <li><a href="#" class="hover-links primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-links" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
@@ -70,37 +74,37 @@
                 <a href="#"class="secondary-button">See All Feature <i class="fa-solid fa-right-long"></i></a>
             </div>
             <div class="features flex">
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 9.svg">
                     <h3>Card Sorting</h3>
                     <p>Discover how people group and lebel information</p>
                     <a href="#"class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 10.svg">
                     <h3>Prototype Test</h3>
                     <p>Discover how people group and lebel information</p>
                     <a href="#"class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 11.svg">
                     <h3>First Click Test</h3>
                     <p>Discover how people group and lebel information</p>
                     <a href="#"class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 12.svg">
                     <h3>Design Survey</h3>
                     <p>Discover how people group and lebel information</p>
                     <a href="#"class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 13.svg">
                     <h3>Performance Test</h3>
                     <p>Discover how people group and lebel information</p>
                     <a href="#"class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="inside-features">
+                <div class="inside-features flex">
                     <img src="assets/asset 14.svg">
                     <h3>Five Second Test</h3>
                     <p>Discover how people group and lebel information</p>
@@ -123,15 +127,14 @@
         </div>
     </div>
     <div class="big-features-section">
-        <div class="container flex big-features-section">
-            
+        <div class="container flex big-features-section big-features-section-2">
+            <div class="big-features-section-image">
+                <img src="assets/asset 16.png">
+            </div>
             <div class="big-features-section-header">
                 <h4>Effortless Validation For</h4>
                 <h2>Design Professional</h2>
                 <p>Test Interface , Interaction flow , icongraphy and more to help to create your delightfull expricence for your users.</p>
-            </div>
-            <div class="big-features-section-image">
-                <img src="assets/asset 16.png">
             </div>
         </div>
     </div>
@@ -172,7 +175,7 @@
             <div class="footer-image">
                 <img src="assets/asset 0.png">
             </div>
-            <div class="footer-1 footer-hover">
+            <div class="footer-content footer-hover">
                 <h3>Product</h3>
                 <ul>
                     <li><a href="#">Overview</a></li>
@@ -182,7 +185,7 @@
                     <li><a href="#">Status Page</a></li>
                 </ul>
             </div>
-            <div class="footer-2 footer-hover">
+            <div class="footer-content footer-hover">
                 <h3>Methodology</h3>
                 <ul>
                     <li><a href="#">Overview</a></li>
@@ -192,7 +195,7 @@
                     <li><a href="#">Status Page</a></li>
                 </ul>
             </div>
-            <div class="footer-3 footer-hover">
+            <div class="footer-content footer-hover">
                 <h3>Resources</h3>
                 <ul>
                     <li><a href="#">Overview</a></li>
@@ -209,5 +212,12 @@
     </div>
 
     <script src="https://kit.fontawesome.com/ad4e20ab90.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
