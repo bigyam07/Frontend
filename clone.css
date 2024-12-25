@@ -351,3 +351,29 @@ hr {
     margin-bottom: 20px;
     text-align: center;
 }
+.sub-footer a {
+    font-size: 0.7rem;
+}
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.underline-hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;;
+    height: 2px; /* Adjust the height of the underline */
+    background-color: #908b8b; /* Color of the underline */
+    transition:  0.4s ease-in-out; /* Controls animation speed */
+}
+.underline-hover:hover {
+    text-decoration: none;
+    color: #908b8b;
+}
+.underline-hover:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
