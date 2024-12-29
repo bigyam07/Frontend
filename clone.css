@@ -15,6 +15,7 @@
 body {
     font-family: "Poppins", sans-serif;
     color: var(--primary-color);
+    overflow-x: hidden;
 }
 h1 {
     font-size: 3rem;
@@ -42,6 +43,7 @@ ul {
 .container {
     max-width: 1580px;
     margin: auto;
+    overflow: hidden;
     padding: 20px;
 }
 .primary-button {
@@ -80,6 +82,9 @@ ul {
 .company-logo img {
     width: 200px;
     
+}
+.nav-toggle {
+    display: none;
 }
 .nav-bar {
     justify-content: space-between;
@@ -193,8 +198,7 @@ ul {
     font-size: 0.8rem;
 }
 .content-section {
-    background-color: #FAF5E8;
-    height: 680px;
+    background-color: #FAF5E8;;
     padding: 60px;
     margin-top: 30px;
 }
@@ -216,16 +220,19 @@ ul {
     position: relative;
     top: -30px;
 }
-.bottom-content-left {
-    width: 515px;
-}
 .bottom-content {
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bottom-content-left {
+    max-width: 50%;
 }
 .bottom-content-right {
-    background-image: url(assets2/asset\ 10.jpeg);
-    width: 505px;
-    height: 250px;
+    max-width: 50%;
+}
+.bottom-content-right img{
+    width: 100%;
+    height: 25%;
     background-size: cover;
     border-radius: 10px;
 }
@@ -236,11 +243,18 @@ ul {
     padding: 60px;
     gap: 40px;
 }
+.big-feature-left {
+    width: 50%px;
+}
+.big-feature-right {
+    width: 50%;
+}
 .big-feature-left img {
-    max-width: 600px; 
+    max-width: 100%; 
 }
 .big-feature-right p {
     margin-bottom: 20px;
+    max-width: 100%;
 }
 .big-feature-right h3 {
     color: black;
@@ -257,7 +271,7 @@ ul {
     gap: 40px;
 }
 .planning-section-image {
-    width: 900px;
+    width: 100%;
     height: 400px;
 }
 .planning-section-image img {

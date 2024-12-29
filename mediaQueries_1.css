@@ -1,0 +1,107 @@
+@media screen and (max-width: 1147px){
+    .bottom-content-left p {
+        padding-left: 7%;
+        padding-right: 2%;
+    }
+    .bottom-content-right {
+        max-width: 400px;
+        margin-right: 2%;;
+    }
+    .big-features-left {
+        width: 100%;
+    }
+    .big-feature-left img {
+        width: 400px
+    }
+    .big-feature-right p {
+        font-size: 0.9rem;
+    }
+    .planning-section {
+        margin: 10px 10%;
+    }
+    footer {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 991px){
+   .hero-header h1 {
+        font-size: 4rem;
+        max-width: 650px;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left: -100%; 
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+     }
+    .nav-toggle {
+        display: block;
+    }
+}
+@media screen and (max-width: 864px) {
+    .top-content img {
+        position: relative;
+        top: 0px;
+        margin-bottom: 20px;
+        width: 150px
+    }   
+    .bottom-content-left {
+        padding: 0px;
+        max-width: 100%;
+    }
+    .bottom-content-left p{
+        max-width: 100%;
+    }
+    .big-features {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .big-feature-left img {
+        width: 100vh;
+    }
+    .big-feature-right {
+        width: 100%;
+    }
+    .planning-section {
+        flex-direction: column;
+    }
+    .planning-section-image {
+        height: 50%;
+    }
+    .planning-section-image img {
+        margin-left: 20%;
+    }
+    .planning-section-header h2 {
+        font-size: 1.5rem;
+        max-width: 75%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .planning-section-header p {
+        font-size: 0.8rem;
+        /* margin: 0px 10px; */
+        padding: 20px
+    }
+    .planning-section-header a {
+        margin: 0px 40;
+        position: relative;
+        left: 25%
+    }
+    footer {
+        margin: 0px 40px;
+        gap: 0px 100px;
+        justify-content: space-evenly;
+        margin-top: 30px
+    }
+}
+@media screen and (max-width: 584px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: -50px;
+    }
+    
+}
