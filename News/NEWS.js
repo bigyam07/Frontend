@@ -69,4 +69,5 @@ const home = document.getElementById("home");
 home.addEventListener('click', () => {
     fetchNews("USA");
     curSelectNav.classList.remove("active");
+    searchText.value = "";
 })
