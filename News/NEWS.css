@@ -70,6 +70,9 @@ nav {
 .hover-links:active {
     color: red;
 }
+.nav-item.active {
+    color: var(--accent-color);
+}
 .search-bar {
     height: 32px;
     gap: 8px;
@@ -103,7 +106,7 @@ main {
 }
 
 .cards-container {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
     align-items: start;
@@ -117,7 +120,8 @@ main {
     overflow: hidden;
     background-color: #fff;
     transition: all 0.3s ease;
-    
+    cursor: pointer;
+    margin: 3px;
 
 }
 .card:hover {
