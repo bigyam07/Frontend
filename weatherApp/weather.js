@@ -19,10 +19,16 @@ async function fetchWeather(cityName) {
 }
 
 let button = document.getElementById("search-button");
-
-button.addEventListener('click', () => {
+let input = document.getElementById("input-text");
+searchCity = ()=>{
     let city = document.getElementById("input-text").value;
     fetchWeather(city);
+}
+button.addEventListener('click', searchCity);
+input.addEventListener("keypress", (e) => {
+    if(e.key == "Enter") {
+        searchCity();
+    }
 });
 
 function display(data) {
