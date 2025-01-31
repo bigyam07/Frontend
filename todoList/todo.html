@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>My Todo-s</h1>
+            <div class="input-section custom-margin">
+                <input type="text" placeholder="Add new..">
+                <button id="add-button">Add</button>
+            </div>
+
+            <hr>
+
+            <div class="select-section">
+                <label>Filter</label>
+                <select>
+                    <option>All</option>
+                    <option>Completed</option>
+                    <option>Active</option>
+                    <option>Has due date</option>
+                </select>
+                <label>Sort</label>
+                <select>
+                    <option>Added Data</option>
+                    <option>Due Data</option>
+                </select>
+            </div>
+
+            <div class="tasks">
+                <p>Buy groceries for Next week</p>
+                <p>Buy groceries for Next week</p>
+            </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+}
+body {
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+}
+.custom-margin {
+    max-width: 90%;
+    margin: 0px auto;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #F8F9FA;
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px #b0b0b0;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 40px;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 3rem
+}
+
+.input-section {
+    width: 100%;
+    background-color: white;
+    padding: 10px;  
+    margin-bottom: 40px;
+}
+.input-section input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+}
+.input-section input:focus {
+    outline: none;
+    border: none;
+}
+.input-section button {
+    width: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+hr {
+    color: #b0b0b0;
+    max-width: 95%;
+    margin: 0 auto;
+    border-bottom: none;
+    margin-bottom: 40px;
+}
