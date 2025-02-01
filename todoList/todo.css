@@ -90,6 +90,9 @@ header h1 {
     font-size: 1rem;
     cursor: pointer;
 }
+.input-section button:hover {
+    background-color: #0772e4;
+}
 .fa-solid {
     font-size: 2rem;
     padding: 10px;
@@ -155,7 +158,12 @@ label {
     color: var(--primary-color);
     font-size: 1.5rem;
 }
-
+#here {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(184, 176, 176) !important;
+    cursor:default;
+}
 .tasks:hover {
     background-color:#eceef0;
     transform: scale(1.01);
@@ -184,3 +192,12 @@ label {
 .flex {
     display: flex;
 }
+.hide {
+    display: none !important;
+}
+.new-task::after {
+    content: " ( Completed )";
+    color: rgb(184, 176, 176);
+    font-size: 0.75rem;
+}
+
