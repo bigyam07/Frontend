@@ -30,6 +30,7 @@ body {
     height: 80%;
     border-radius: 30px;
     box-shadow: 0px 5px 15px #b0b0b0;
+    /* overflow: auto; */
 }
 
 header {
@@ -65,9 +66,10 @@ header h1 {
     background-color: white;
     padding: 10px;  
     margin-bottom: 40px;
+    justify-content: space-between;
 }
 .input-section input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border: none;
     font-size: 1rem;
@@ -86,8 +88,13 @@ header h1 {
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
+    cursor: pointer;
 }
-
+.fa-solid {
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
 hr {
     color: #b0b0b0;
     max-width: 95%;
@@ -113,6 +120,10 @@ select {
 label {
     font-size: 0.8rem;
     margin-inline: 10px;
+}
+.tasks-box {
+    max-height: 400px;
+    overflow: auto;
 }
 .tasks-box p{
     font-size: 2rem;
