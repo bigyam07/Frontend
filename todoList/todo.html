@@ -11,8 +11,10 @@
 <body>
     <div class="container">
         <div class="box">
-
-            <h1>My Todo-s</h1>
+            <header>
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <h1>My Todo-s</h1>
+            </header>
             <div class="input-section custom-margin">
                 <input type="text" placeholder="Add new..">
                 <button id="add-button">Add</button>
@@ -20,7 +22,7 @@
 
             <hr>
 
-            <div class="select-section">
+            <div class="select-section custom-margin">
                 <label>Filter</label>
                 <select>
                     <option>All</option>
@@ -35,12 +37,27 @@
                 </select>
             </div>
 
-            <div class="tasks">
-                <p>Buy groceries for Next week</p>
-                <p>Buy groceries for Next week</p>
+            <div class="tasks-box custom-margin">
+                <div class="tasks">
+                    <div class="check-box"></div>
+                    <p>Buy groceries for Next week</p>
+                </div>
+                <div class="tasks">
+                    <div class="check-box"></div>
+                    <p>Buy groceries for Next week</p>
+                </div>
+                <div class="tasks">
+                    <div class="check-box"></div>
+                    <p>Buy groceries for Next week</p>
+                </div>
+                <div class="tasks">
+                    <div class="check-box"></div>
+                    <p>Buy groceries for Next week</p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/ad4e20ab90.js" crossorigin="anonymous"></script>
     <script src="todo.js"></script>
 </body>
 
