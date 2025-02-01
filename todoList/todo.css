@@ -114,14 +114,17 @@ label {
     font-size: 0.8rem;
     margin-inline: 10px;
 }
-
 .tasks-box p{
     font-size: 2rem;
     color: #444;
 }
 .tasks {
-    display: flex;
-    margin-block: 40px;
+    display: flex;  
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 15px ;
+    margin: 12px;
+    justify-content: space-between;
 }
 .check-box {
     width: 30px;
@@ -130,4 +133,41 @@ label {
     border-radius: 6px;
     margin-top: 10px;
     margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.check-box i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.tasks:hover {
+    background-color:#eceef0;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+.task-right {
+    gap: 20px
+}
+.fa-regular {
+    margin-top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-trash-can {
+    color: red;
+}
+.fa-pen-to-square {
+    color: rgb(115, 177, 23);
+}
+.fa-trash-can:hover {
+    color: rgb(198, 7, 7);
+}
+.fa-pen-to-square:hover {
+    color: rgb(77, 118, 16);
+}
+.flex {
+    display: flex;
 }
