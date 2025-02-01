@@ -201,3 +201,19 @@ label {
     font-size: 0.75rem;
 }
 
+.input-replace {
+    border: none;
+    background-color: #F8F9FA;
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    width: 100%;
+}
+.input-replace:focus {
+    outline: none;
+    background-color: #eceef0;
+}
+.input-replace:hover {
+    background-color: #eceef0;
+    transition: all 0.2s ease;
+}

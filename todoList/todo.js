@@ -3,7 +3,11 @@ let addBtn = document.getElementById("add-button");
 let tasksBox = document.getElementById("tasks-box")
 
 addBtn.addEventListener('click', addTask);
-
+inputBtn.addEventListener('keypress', (e) => {
+    if(e.key == "Enter") {
+        addTask();
+    }
+})
 function addTask() {
     if(inputBtn.value == "") {
         return;
@@ -55,6 +59,31 @@ function addTask() {
             Para.style.textDecoration = "none";
             Para.classList.remove("new-task");
         }
+    });
+    deleteBtn.addEventListener('click', () => {
+        task.remove();
+    });
+
+    editBtn.addEventListener('click', () => {
+        let inputField = document.createElement("input");
+        inputField.type = Text;
+        inputField.value = Para.innerText;
+        inputField.classList.add("input-replace");
+        taskLeft.replaceChild(inputField, Para);
+        inputField.focus();
+
+        inputField.addEventListener('blur', () => {
+            if(inputField.value.trim() !== "") {
+                Para.innerText = inputField.value;
+            }
+            taskLeft.replaceChild(Para, inputField);
+        });
+
+        inputField.addEventListener("keypress", (e) => {
+            if(e.key == "Enter") {
+                inputField.blur(); //trigger blur event
+            }
+        });
     });
 }
 
