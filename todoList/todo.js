@@ -1,6 +1,7 @@
 let inputBtn = document.getElementById("input-value");
 let addBtn = document.getElementById("add-button");
 let tasksBox = document.getElementById("tasks-box")
+let here = document.getElementById("here");
 
 addBtn.addEventListener('click', addTask);
 inputBtn.addEventListener('keypress', (e) => {
@@ -12,7 +13,7 @@ function addTask() {
     if(inputBtn.value == "") {
         return;
     }
-    let here = document.getElementById("here");
+   
     here.classList.add("hide");
 
     let task =  document.createElement("div");
@@ -62,6 +63,9 @@ function addTask() {
     });
     deleteBtn.addEventListener('click', () => {
         task.remove();
+        if(tasksBox.children.length === 1) {
+            here.classList.remove("hide");
+        }
     });
 
     editBtn.addEventListener('click', () => {
