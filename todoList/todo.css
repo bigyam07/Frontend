@@ -93,6 +93,8 @@ header h1 {
 .fa-solid {
     font-size: 2rem;
     padding: 10px;
+}
+.fa-calendar-days {
     cursor: pointer;
 }
 hr {
