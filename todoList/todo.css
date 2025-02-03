@@ -222,7 +222,7 @@ label {
 #dark-mode {
     background-color: #eceef0;
     border: none;
-    box-shadow: 2px 2px 4px #b0b0b0;
+    box-shadow: 0px 0px 5px #b0b0b0;
     border-radius: 50%;
     height: 40px;
     width: 40px;
