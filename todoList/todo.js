@@ -3,6 +3,7 @@ let addBtn = document.getElementById("add-button");
 let tasksBox = document.getElementById("tasks-box")
 let here = document.getElementById("here");
 let tasksBoxContainer = document.getElementById("tasks");
+
 addBtn.addEventListener('click', addTask);
 inputBtn.addEventListener('keypress', (e) => {
     if(e.key == "Enter") {
@@ -13,7 +14,6 @@ function addTask() {
     if(inputBtn.value == "") {
         return;
     }
-   
     here.classList.add("hide");
 
     let task =  document.createElement("div");
@@ -31,7 +31,7 @@ function addTask() {
     let Para = document.createElement("p");
     // Para.setAttribute("id", "paragraph");
     Para.innerText = inputBtn.value;
-    Para.style.color = isDarkMode ? "white" : "#444";
+    // Para.style.color = isDarkMode ? "white" : "#444";
 
 
     let taskRight = document.createElement("div");
@@ -73,12 +73,12 @@ function addTask() {
 
     editBtn.addEventListener('click', () => {
         let inputField = document.createElement("input");
-        inputField.type = text;
+        inputField.type = "text";
         inputField.value = Para.innerText;
         inputField.classList.add("input-replace");
         taskLeft.replaceChild(inputField, Para);
         inputField.focus();
-
+        console.log("clicked");
         inputField.addEventListener('blur', () => {
             if(inputField.value.trim() !== "") {
                 Para.innerText = inputField.value;
@@ -94,62 +94,62 @@ function addTask() {
     });
 }
 
-let darkBtn = document.getElementById("dark-mode");
-let isDarkMode = false;
-darkBtn.addEventListener('click', darkMode);
+// let darkBtn = document.getElementById("dark-mode");
+// let isDarkMode = false;
+// darkBtn.addEventListener('click', darkMode);
 
 
-function darkMode() {
-    let container = document.querySelector(".container");
-    let box = document.querySelector(".box");
-    let labels = document.querySelectorAll("label");
-    let Para = document.querySelectorAll("p");
+// function darkMode() {
+//     let container = document.querySelector(".container");
+//     let box = document.querySelector(".box");
+//     let labels = document.querySelectorAll("label");
+//     let Para = document.querySelectorAll("p");
 
-    if(!isDarkMode) {
-        container.style.backgroundColor = "#282828";
-        box.style.backgroundColor = "#444";
-        box.style.boxShadow = "0 0 15px white";
-        Para.forEach((paragraph) => {
-            paragraph.style.color = "white";
-        });
+//     if(!isDarkMode) {
+//         container.style.backgroundColor = "#282828";
+//         box.style.backgroundColor = "#444";
+//         box.style.boxShadow = "0 0 15px white";
+//         Para.forEach((paragraph) => {
+//             paragraph.style.color = "white";
+//         });
         
-        labels.forEach((label) => {
-            label.style.color = "white";
-        });
-        tasksBox.addEventListener("mouseover", (e) => {
-            if (e.target.closest(".tasks")) {
-                e.target.style.backgroundColor = "#8b8b8b";
-            }
-        });
+//         labels.forEach((label) => {
+//             label.style.color = "white";
+//         });
+//         tasksBox.addEventListener("mouseover", (e) => {
+//             if (e.target.closest(".tasks")) {
+//                 e.target.style.backgroundColor = "#8b8b8b";
+//             }
+//         });
         
-        tasksBox.addEventListener("mouseout", (e) => {
-            if (e.target.closest(".tasks")) {
-                e.target.style.backgroundColor = "transparent";
-            }
-        });
-        isDarkMode = true;
-    } else {
-        container.style.backgroundColor = "white";
-        box.style.backgroundColor = "#F8F9FA";
-        box.style.boxShadow = "0px 0px 6px #b0b0b0";
-        labels.forEach((label) => {
-            label.style.color = "#6c757d";
-        });
-        Para.forEach((paragraph) => {
-            paragraph.style.color = "#444";
-        });
-        tasksBox.addEventListener("mouseover", (e) => {
-            if (e.target.classList.contains("tasks")) {
-                e.target.style.backgroundColor = "#eceef0";
-            }
-        });
+//         tasksBox.addEventListener("mouseout", (e) => {
+//             if (e.target.closest(".tasks")) {
+//                 e.target.style.backgroundColor = "transparent";
+//             }
+//         });
+//         isDarkMode = true;
+//     } else {
+//         container.style.backgroundColor = "white";
+//         box.style.backgroundColor = "#F8F9FA";
+//         box.style.boxShadow = "0px 0px 6px #b0b0b0";
+//         labels.forEach((label) => {
+//             label.style.color = "#6c757d";
+//         });
+//         Para.forEach((paragraph) => {
+//             paragraph.style.color = "#444";
+//         });
+//         tasksBox.addEventListener("mouseover", (e) => {
+//             if (e.target.classList.contains("tasks")) {
+//                 e.target.style.backgroundColor = "#eceef0";
+//             }
+//         });
         
-        tasksBox.addEventListener("mouseout", (e) => {
-            if (e.target.classList.contains("tasks")) {
-                e.target.style.backgroundColor = "transparent";
-            }
-        });
-        isDarkMode = false;
-    }
-}
+//         tasksBox.addEventListener("mouseout", (e) => {
+//             if (e.target.classList.contains("tasks")) {
+//                 e.target.style.backgroundColor = "transparent";
+//             }
+//         });
+//         isDarkMode = false;
+//     }
+// }
 
